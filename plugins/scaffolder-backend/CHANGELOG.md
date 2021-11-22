@@ -1,5 +1,14 @@
 # @backstage/plugin-scaffolder-backend
 
+## 0.15.14
+
+### Patch Changes
+
+- Updated dependencies
+  - @backstage/errors@0.1.5
+  - @backstage/backend-common@0.9.11
+  - @backstage/plugin-catalog-backend@0.18.0
+
 ## 0.15.13
 
 ### Patch Changes
