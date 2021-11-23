@@ -61,11 +61,20 @@ export function filterByVisibility(
       const arr = new Array<JsonValue>();
 
       for (const [index, value] of jsonVal.entries()) {
-        const out = transform(
-          value,
-          `${visibilityPath}/${index}`,
-          `${filterPath}[${index}]`,
-        );
+        let out;
+        if (typeof value !== 'object') {
+          out = transform(
+            value,
+            `${visibilityPath}`,
+            `${filterPath}[${index}]`,
+          );
+        } else {
+          out = transform(
+            value,
+            `${visibilityPath}/${index}`,
+            `${filterPath}[${index}]`,
+          );
+        }
         if (out !== undefined) {
           arr.push(out);
         }

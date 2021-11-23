@@ -40,9 +40,7 @@ const data = {
 
 const visibility = new Map<string, ConfigVisibility>(
   Object.entries({
-    '/arr/0': 'frontend',
-    '/arr/1': 'backend',
-    '/arr/2': 'secret',
+    '/arr': 'frontend',
     '/obj/f': 'frontend',
     '/obj/b': 'backend',
     '/obj/b/s': 'secret',
@@ -92,15 +90,13 @@ describe('filterByVisibility', () => {
       ['frontend'],
       {
         data: {
-          arr: ['f'],
+          arr: ['f', 'b', 's'],
           objArr: [{ f: 1 }, { f: 4 }],
           obj: { f: 'a' },
           arrF: [],
           objF: {},
         },
         filteredKeys: [
-          'arr[1]',
-          'arr[2]',
           'objArr[0].b',
           'objArr[0].s',
           'objArr[1].b',
@@ -119,7 +115,6 @@ describe('filterByVisibility', () => {
       ['backend'],
       {
         data: {
-          arr: ['b'],
           objArr: [{ b: 2 }, { b: 5 }],
           obj: { b: {} },
           arrF: [{ never: 'here' }],
@@ -131,6 +126,7 @@ describe('filterByVisibility', () => {
         },
         filteredKeys: [
           'arr[0]',
+          'arr[1]',
           'arr[2]',
           'objArr[0].f',
           'objArr[0].s',
@@ -145,7 +141,6 @@ describe('filterByVisibility', () => {
       ['secret'],
       {
         data: {
-          arr: ['s'],
           objArr: [{ s: 3 }, { s: 6 }],
           obj: { b: { s: true } },
           arrS: [],
@@ -154,6 +149,7 @@ describe('filterByVisibility', () => {
         filteredKeys: [
           'arr[0]',
           'arr[1]',
+          'arr[2]',
           'objArr[0].f',
           'objArr[0].b',
           'objArr[1].f',
