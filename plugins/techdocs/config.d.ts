@@ -39,5 +39,21 @@ export interface Config {
      * @deprecated
      */
     requestUrl?: string;
+
+    sanitizer?: {
+      /**
+       * Allows overwrite the ADD_TAGS config used in techdocs sanitizer,
+       * this way it is possible to extend the existing array of allowed tags of DOMPurify.
+       * @visibility frontend
+       */
+      addTags?: string[];
+
+      /**
+       * Allows overwrite the FORBID_TAGS config used in techdocs sanitizer,
+       * this way it is possible to extend the existing array of forbid tags of DOMPurify.
+       * @visibility frontend
+       */
+      forbidTags?: string[];
+    };
   };
 }

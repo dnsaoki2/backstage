@@ -421,3 +421,34 @@ folder (/docs) or replace the content in this file.
 > on how you have configured your `template.yaml`
 
 Done! You now have support for TechDocs in your own software template!
+
+## how to customize the sanitizer in TechDocs
+
+Techdocs uses the [DOMPurify](https://github.com/cure53/DOMPurify) to sanitizes
+HTML and prevents XSS attacks
+
+To modify the current sanitizer behavior in TechDocs it's possible to override
+the following DOMPurify settings:
+
+- ADD_TAGS
+- FORBID_TAGS
+
+To overwrite the ADD_TAGS configuration add this to your `app-config.yaml`. The
+default is ["link"]
+
+```yaml
+techdocs:
+  sanitizer:
+    addTags:
+      - iframe
+```
+
+To overwrite the FORBID_TAGS configuration add this to your `app-config.yaml`.
+The default is ["style"]
+
+```yaml
+techdocs:
+  sanitizer:
+    forbidTags:
+      - style
+```
