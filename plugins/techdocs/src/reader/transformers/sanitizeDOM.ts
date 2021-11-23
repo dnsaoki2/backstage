@@ -34,15 +34,16 @@ export const safeLinksHook = (node: Element) => {
   return node;
 };
 
+import { Config } from '@backstage/config';
 import DOMPurify from 'dompurify';
 import type { Transformer } from './transformer';
 
-export const sanitizeDOM = (): Transformer => {
+export const sanitizeDOM = (config?: Config): Transformer => {
   return dom => {
     DOMPurify.addHook('afterSanitizeAttributes', safeLinksHook);
     return DOMPurify.sanitize(dom.innerHTML, {
-      ADD_TAGS: ['link'],
-      FORBID_TAGS: ['style'],
+      ADD_TAGS: config?.getOptionalStringArray('addTags') || ['link'],
+      FORBID_TAGS: config?.getOptionalStringArray('forbidTags') || ['style'],
       WHOLE_DOCUMENT: true,
       RETURN_DOM: true,
     });

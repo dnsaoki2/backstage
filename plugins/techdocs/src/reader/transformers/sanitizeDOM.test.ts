@@ -14,6 +14,7 @@
  * limitations under the License.
  */
 
+import { ConfigReader } from '@backstage/config';
 import { createTestShadowDom, FIXTURES } from '../../test-utils';
 import { Transformer } from './index';
 import { sanitizeDOM } from './sanitizeDOM';
@@ -109,6 +110,50 @@ describe('sanitizeDOM', () => {
     });
 
     expect(shadowDom.querySelectorAll('link').length).toEqual(1);
+  });
+
+  it('allows to customize ADD_TAGS', async () => {
+    const html = `
+      <html>
+        <head>
+          <link rel="stylesheet" href="style.css">
+        </head>
+        <body>
+          <iframe src="url" title="description"></iframe>
+        </body>
+      </html>
+    `;
+    const config = new ConfigReader({
+      addTags: ['iframe'],
+    });
+    const shadowDom = await createTestShadowDom(html, {
+      preTransformers: [sanitizeDOM(config)],
+      postTransformers: [],
+    });
+    expect(shadowDom.querySelectorAll('link').length).toEqual(0);
+    expect(shadowDom.querySelectorAll('iframe').length).toEqual(1);
+  });
+
+  it('allows to customize FORBID_TAGS', async () => {
+    const html = `
+      <html>
+        <head>
+          <style>* {color: #f0f;}</style>
+        </head>
+        <body>
+        </body>
+      </html>
+    `;
+
+    const config = new ConfigReader({
+      forbidTags: [],
+    });
+    const shadowDom = await createTestShadowDom(html, {
+      preTransformers: [sanitizeDOM(config)],
+      postTransformers: [],
+    });
+
+    expect(shadowDom.querySelectorAll('style').length).toEqual(1);
   });
 
   describe('safe head links', () => {
