@@ -14,6 +14,7 @@
  * limitations under the License.
  */
 
+import { ConfigReader } from '@backstage/config';
 import { createTestShadowDom, FIXTURES } from '../../test-utils';
 import { Transformer } from './index';
 import { sanitizeDOM } from './sanitizeDOM';
@@ -109,6 +110,72 @@ describe('sanitizeDOM', () => {
     });
 
     expect(shadowDom.querySelectorAll('link').length).toEqual(1);
+  });
+
+  it('render iframe where src host is in allowedIframeHosts', async () => {
+    const html = `
+      <html>
+        <head>
+          <link rel="stylesheet" href="style.css">
+        </head>
+        <body>
+          <iframe src="https://example.com?test=1" title="description"></iframe>
+          <iframe src="https://forbidden.com?test=1" title="description"></iframe>
+        </body>
+      </html>
+    `;
+    const config = new ConfigReader({
+      allowedIframeHosts: ['example.com'],
+    });
+    const shadowDom = await createTestShadowDom(html, {
+      preTransformers: [sanitizeDOM(config)],
+      postTransformers: [],
+    });
+    expect(shadowDom.querySelectorAll('link').length).toEqual(1);
+    expect(shadowDom.querySelectorAll('iframe').length).toEqual(1);
+  });
+
+  it('should remove all iframes without allowedIframeHosts', async () => {
+    const html = `
+      <html>
+        <head>
+          <link rel="stylesheet" href="style.css">
+        </head>
+        <body>
+          <iframe src="https://example.com?test=1" title="description"></iframe>
+          <iframe src="https://forbidden.com?test=1" title="description"></iframe>
+        </body>
+      </html>
+    `;
+    const config = new ConfigReader({});
+    const shadowDom = await createTestShadowDom(html, {
+      preTransformers: [sanitizeDOM(config)],
+      postTransformers: [],
+    });
+    expect(shadowDom.querySelectorAll('link').length).toEqual(1);
+    expect(shadowDom.querySelectorAll('iframe').length).toEqual(0);
+  });
+
+  it('should remove iframe with invalid url in src', async () => {
+    const html = `
+      <html>
+        <head>
+          <link rel="stylesheet" href="style.css">
+        </head>
+        <body>
+          <iframe src="invalid.md" title="description"></iframe>
+        </body>
+      </html>
+    `;
+    const config = new ConfigReader({
+      allowedIframeHosts: ['example.com'],
+    });
+    const shadowDom = await createTestShadowDom(html, {
+      preTransformers: [sanitizeDOM(config)],
+      postTransformers: [],
+    });
+    expect(shadowDom.querySelectorAll('link').length).toEqual(1);
+    expect(shadowDom.querySelectorAll('iframe').length).toEqual(0);
   });
 
   describe('safe head links', () => {
