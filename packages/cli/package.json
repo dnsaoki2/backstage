@@ -62,7 +62,7 @@
     "css-loader": "^5.2.6",
     "diff": "^5.0.0",
     "esbuild": "^0.14.1",
-    "eslint": "^7.30.0",
+    "eslint": "^8.5.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-formatter-friendly": "^7.0.0",
     "eslint-plugin-import": "^2.20.2",
