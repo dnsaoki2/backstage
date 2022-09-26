@@ -36,7 +36,7 @@
     "@types/commander": "^2.12.2",
     "@types/fs-extra": "^9.0.6",
     "@types/http-proxy": "^1.17.4",
-    "@types/jest": "^26.0.7",
+    "@types/jest": "^29.0.3",
     "@types/node": "^14.14.32",
     "@types/react-dev-utils": "^9.0.4",
     "@types/serve-handler": "^6.1.0",
