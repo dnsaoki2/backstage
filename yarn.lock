@@ -2506,6 +2506,11 @@
     react-router "6.0.0-beta.0"
     react-use "^17.2.4"
 
+"@balena/dockerignore@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.npmjs.org/@balena/dockerignore/-/dockerignore-1.0.2.tgz#9ffe4726915251e8eb69f44ef3547e0da2c03e0d"
+  integrity sha512-wMue2Sy4GAVTk6Ic4tJVcnfdau+gx2EnG7S+uAEe+TWJFqE4YoWN4/H8MSLj4eYJKxGg26lZwboEniNiNwZQ6Q==
+
 "@bcoe/v8-coverage@^0.2.3":
   version "0.2.3"
   resolved "https://registry.npmjs.org/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
@@ -7318,9 +7323,9 @@
     "@types/ssh2" "*"
 
 "@types/dockerode@^3.2.5", "@types/dockerode@^3.3.0":
-  version "3.3.0"
-  resolved "https://registry.npmjs.org/@types/dockerode/-/dockerode-3.3.0.tgz#d6afcc1de31e211ee900da3a48ef4f1a496cf05a"
-  integrity sha512-3Mc0b2gnypJB8Gwmr+8UVPkwjpf4kg1gVxw8lAI4Y/EzpK50LixU1wBSPN9D+xqiw2Ubb02JO8oM0xpwzvi2mg==
+  version "3.3.11"
+  resolved "https://registry.npmjs.org/@types/dockerode/-/dockerode-3.3.11.tgz#59f7099540cc781fc50410d9762b7a55f7053007"
+  integrity sha512-aokz8xlZoq+ShZ5UkDmVZFwOrzuxK2ufFxK8WcQ4PuCPlQmUWl7kyHAv6ahKI7furWAysLtQnO7xX0jNDJdQTw==
   dependencies:
     "@types/docker-modem" "*"
     "@types/node" "*"
@@ -13388,10 +13393,11 @@ docker-modem@^3.0.0:
     ssh2 "^1.4.0"
 
 dockerode@^3.3.1:
-  version "3.3.1"
-  resolved "https://registry.npmjs.org/dockerode/-/dockerode-3.3.1.tgz#74f66e239e092e7910e2beae6322d35c44b08cdc"
-  integrity sha512-AS2mr8Lp122aa5n6d99HkuTNdRV1wkkhHwBdcnY6V0+28D3DSYwhxAk85/mM9XwD3RMliTxyr63iuvn5ZblFYQ==
+  version "3.3.4"
+  resolved "https://registry.npmjs.org/dockerode/-/dockerode-3.3.4.tgz#875de614a1be797279caa9fe27e5637cf0e40548"
+  integrity sha512-3EUwuXnCU+RUlQEheDjmBE0B7q66PV9Rw5NiH1sXwINq0M9c5ERP9fxgkw36ZHOtzf4AGEEYySnkx/sACC9EgQ==
   dependencies:
+    "@balena/dockerignore" "^1.0.2"
     docker-modem "^3.0.0"
     tar-fs "~2.0.1"
 
