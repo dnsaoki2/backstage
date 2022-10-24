@@ -35,7 +35,7 @@
     "@backstage/errors": "^0.1.5",
     "@backstage/integration": "^0.6.10",
     "@backstage/types": "^0.1.1",
-    "@google-cloud/storage": "^5.8.0",
+    "@google-cloud/storage": "^6.5.4",
     "@lerna/project": "^4.0.0",
     "@octokit/rest": "^18.5.3",
     "@types/cors": "^2.8.6",
