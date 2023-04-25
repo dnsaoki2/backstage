@@ -45,7 +45,7 @@
   "devDependencies": {
     "@backstage/backend-test-utils": "^0.1.10",
     "@backstage/cli": "^0.10.0",
-    "jest": "^26.0.1",
+    "jest": "^29.5.0",
     "wait-for-expect": "^3.0.2"
   },
   "files": [
