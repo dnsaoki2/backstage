@@ -24777,9 +24777,9 @@ react-use@^17.2.4:
     tslib "^2.1.0"
 
 react-virtualized-auto-sizer@^1.0.6:
-  version "1.0.6"
-  resolved "https://registry.npmjs.org/react-virtualized-auto-sizer/-/react-virtualized-auto-sizer-1.0.6.tgz#66c5b1c9278064c5ef1699ed40a29c11518f97ca"
-  integrity sha512-7tQ0BmZqfVF6YYEWcIGuoR3OdYe8I/ZFbNclFlGOC3pMqunkYF/oL30NCjSGl9sMEb17AnzixDz98Kqc3N76HQ==
+  version "1.0.18"
+  resolved "https://registry.npmjs.org/react-virtualized-auto-sizer/-/react-virtualized-auto-sizer-1.0.18.tgz#ccb15d2ad0fdd23444b3d706ea671e415532d2bf"
+  integrity sha512-GQ+F6z6+upBGmoed5SyiAT3ZBLOeOJr4xH76dsARfRf4vmjspexsnSrMayDg7+xXmnW+BrKppqGh64s79w2xuA==
 
 react-window@^1.8.6:
   version "1.8.6"
