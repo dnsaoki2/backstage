@@ -7285,9 +7285,9 @@
     "@types/d3-path" "*"
 
 "@types/d3-zoom@^3.0.1":
-  version "3.0.1"
-  resolved "https://registry.npmjs.org/@types/d3-zoom/-/d3-zoom-3.0.1.tgz#4bfc7e29625c4f79df38e2c36de52ec3e9faf826"
-  integrity sha512-7s5L9TjfqIYQmQQEUcpMAcBOahem7TRoSO/+Gkz02GbMVuULiZzjF2BOdw291dbO2aNon4m2OdFsRGaCq2caLQ==
+  version "3.0.5"
+  resolved "https://registry.npmjs.org/@types/d3-zoom/-/d3-zoom-3.0.5.tgz#3cc09d38add8231ecaa710ec053e876896e9b865"
+  integrity sha512-mIefdTLtxuWUWTbBupCUXPAXVPmi8/Uwrq41gQpRh0rD25GMU1ku+oTELqNY2NuuiI0F3wXC5e1liBQi7YS7XQ==
   dependencies:
     "@types/d3-interpolate" "*"
     "@types/d3-selection" "*"
