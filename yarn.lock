@@ -7024,9 +7024,11 @@
   integrity sha512-iIgQNzCm0v7QMhhe4Jjn9uRh+I6GoPmt03CbEtwx3ao8/EfoQcmgtqH4vQ5Db/lxiIGaWDv6nwvunuh0RyX0+A==
 
 "@types/aws4@^1.5.1":
-  version "1.5.2"
-  resolved "https://registry.npmjs.org/@types/aws4/-/aws4-1.5.2.tgz#34e35b4405a619b9205be3e7678963bc7c8a47db"
-  integrity sha512-r8+XOv0BKw3Br0oU6w9cfu21PaQq/5ZeXvMOivNQYJLc9WcPCpEFDaQu72QNEQjYv5Otu48VhjjnbtwrSmk/rg==
+  version "1.11.5"
+  resolved "https://registry.npmjs.org/@types/aws4/-/aws4-1.11.5.tgz#910678f602243e7cb5c06566b319e5b5bb5bff04"
+  integrity sha512-UBercs8+U9+KAGq3eDIB7+qKVbjxayzwit5Xw+UfRBWgNolGh8PZwCjLn5ILqgVSSTnIJDktGHTsFfOA2kGjkA==
+  dependencies:
+    "@types/node" "*"
 
 "@types/babel__core@^7.0.0", "@types/babel__core@^7.1.7":
   version "7.1.9"
@@ -9963,9 +9965,9 @@ aws-sign2@~0.7.0:
   integrity sha1-tG6JCTSpWR8tL2+G1+ap8bP+dqg=
 
 aws4@^1.11.0, aws4@^1.8.0:
-  version "1.11.0"
-  resolved "https://registry.npmjs.org/aws4/-/aws4-1.11.0.tgz#d61f46d83b2519250e2784daf5b09479a8b41c59"
-  integrity sha512-xh1Rl34h6Fi1DC2WWKfxUTVqRsNnr6LsKz2+hfwDxQJWmrx8+c7ylaqBMcHfl1U1r2dsifOvKX3LQuLNZ+XSvA==
+  version "1.12.0"
+  resolved "https://registry.npmjs.org/aws4/-/aws4-1.12.0.tgz#ce1c9d143389679e253b314241ea9aa5cec980d3"
+  integrity sha512-NmWvPnx0F1SfrQbYwOi7OeaNGokp9XhzNioJ/CSBs8Qa4vxug81mhJEAVZwxXuBmYB5KDRfMq/F3RR0BIU7sWg==
 
 axe-core@^4.0.2:
   version "4.1.3"
