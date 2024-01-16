@@ -27,7 +27,7 @@
     "@backstage/core-plugin-api": "^0.3.1",
     "@backstage/plugin-catalog": "^0.7.4",
     "@backstage/plugin-catalog-react": "^0.6.5",
-    "@date-io/luxon": "1.x",
+    "@date-io/luxon": "3.x",
     "@material-ui/core": "^4.12.2",
     "@material-ui/icons": "^4.9.1",
     "@material-ui/lab": "4.0.0-alpha.57",
