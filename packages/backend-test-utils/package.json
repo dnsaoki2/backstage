@@ -34,7 +34,7 @@
     "@backstage/cli": "^0.10.0",
     "@backstage/config": "^0.1.9",
     "knex": "^0.95.1",
-    "mysql2": "^2.2.5",
+    "mysql2": "^3.9.1",
     "pg": "^8.3.0",
     "sqlite3": "^5.0.1",
     "testcontainers": "^7.23.0",
