@@ -7596,12 +7596,13 @@
   dependencies:
     "@types/istanbul-lib-report" "*"
 
-"@types/jenkins@^0.23.1":
-  version "0.23.2"
-  resolved "https://registry.npmjs.org/@types/jenkins/-/jenkins-0.23.2.tgz#96736a2be4904efdfe7fe2650569479fd77dc48e"
-  integrity sha512-BELmIZ6brxwGFqBHfLjLTjYRWAUqcT1d2BydH1CcRTZEjCYw3DRVfZkXU7BVlyIsKXm2ZMIKVkEjKKtVDvPiXA==
+"@types/jenkins@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.npmjs.org/@types/jenkins/-/jenkins-1.0.2.tgz#ad5b1787fa307f9e5a804ffb23fadf0732754cbf"
+  integrity sha512-kEJ5a57CVkPffCHr42THTnHNzmu3um1q0idJ7P2mX9jWWJywieD8CvuFpG9gRySR4UOMSmQiS96mQtfSXNV5tA==
   dependencies:
     "@types/node" "*"
+    form-data "^4.0.0"
 
 "@types/jest-when@^2.7.2":
   version "2.7.2"
@@ -18174,12 +18175,12 @@ jake@^10.6.1:
     filelist "^1.0.1"
     minimatch "^3.0.4"
 
-jenkins@^0.28.1:
-  version "0.28.1"
-  resolved "https://registry.npmjs.org/jenkins/-/jenkins-0.28.1.tgz#f7951798ee5d2bb501a831979b6b5ecc1a922a64"
-  integrity sha512-gcC4QUrP4VzdqOMHoVzh36XlJprxJkI2HGLQSY7w84KoCTVNDcR/8O00tYyXp9vrZOx4wl5zCXLVKMgH2IoyJQ==
+jenkins@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.npmjs.org/jenkins/-/jenkins-1.1.0.tgz#be61a07223d076956f357cc324fd18c5b281fcb7"
+  integrity sha512-oLiVMCt5pKp3N3br7P4Fknm5Qyu0katGc4WAhokFtPSE/waePCphK/XST9Fs/srrRY4VtN5wvI79r81fIjZkpg==
   dependencies:
-    papi "^0.29.0"
+    papi "^1.1.0"
 
 jest-changed-files@^26.6.2:
   version "26.6.2"
@@ -22621,10 +22622,10 @@ pako@^1.0.10, pako@~1.0.5:
   resolved "https://registry.npmjs.org/pako/-/pako-1.0.11.tgz#6c9599d340d54dfd3946380252a35705a6b992bf"
   integrity sha512-4hLB8Py4zZce5s4yd9XzopqwVv/yGNhV1Bl8NTmCq1763HeK2+EwVTv+leGeL13Dnh2wfbqowVPXCIO0z4taYw==
 
-papi@^0.29.0:
-  version "0.29.1"
-  resolved "https://registry.npmjs.org/papi/-/papi-0.29.1.tgz#7373e2c527f5117d61fd2a0e6c6b1dd72bf7f180"
-  integrity sha512-Y9ipSMfWuuVFO3zY9PlxOmEg+bQ7CeJ28sa9/a0veYNynLf9fwjR3+3fld5otEy7okUaEOUuCHVH62MyTmACXQ==
+papi@^1.1.0:
+  version "1.1.2"
+  resolved "https://registry.npmjs.org/papi/-/papi-1.1.2.tgz#5b1d7686834bec489f1f823103c5e8554f2b984f"
+  integrity sha512-cwM6pPpfAYgPe3EQi23SmB5J5s4XFS9lou9z63I5BbnMGmFaR8LAKvKboW7n1IUAKj76OtnyK0YU16JjnZrqVg==
 
 parallel-transform@^1.1.0:
   version "1.2.0"
