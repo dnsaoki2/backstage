@@ -39,7 +39,7 @@
     "json-schema": "^0.4.0",
     "lodash": "^4.17.21",
     "uuid": "^8.0.0",
-    "yup": "^0.32.9"
+    "yup": "^1.4.0"
   },
   "devDependencies": {
     "@backstage/cli": "^0.10.2",
