@@ -13680,11 +13680,10 @@ ejs@^3.1.6:
     jake "^10.6.1"
 
 elastic-builder@^2.16.0:
-  version "2.16.0"
-  resolved "https://registry.npmjs.org/elastic-builder/-/elastic-builder-2.16.0.tgz#684757ab9e6a4214653d23d84cec5ab8d185892f"
-  integrity sha512-5EXFxTAOPQFW7uYe59lZ5pqHBoyILQ8U3x1GgZN921EfAsLNdA2kMV0bgK8/rwJOd9JM0F40WpGxCPzHRtCG1Q==
+  version "2.29.0"
+  resolved "https://registry.npmjs.org/elastic-builder/-/elastic-builder-2.29.0.tgz#472a667903aa594d01f1f2058d55e7ae91990158"
+  integrity sha512-PanRadFQs/nnGV3sJOlZ9eGeSzbVBtbbtpx1bqep64EYALIaTudSEW9Eqo4gp5rWqH4VOTMFV6vPFz26o9L0KQ==
   dependencies:
-    babel-runtime "^6.26.0"
     lodash.has "^4.5.2"
     lodash.hasin "^4.5.2"
     lodash.head "^4.0.1"
