@@ -43,7 +43,7 @@
     "@types/webpack-env": "^1.15.3",
     "embedded-techdocs-app": "0.2.56",
     "find-process": "^1.4.5",
-    "nodemon": "^2.0.2",
+    "nodemon": "^3.1.4",
     "ts-node": "^10.0.0"
   },
   "files": [
