@@ -22054,6 +22054,11 @@ oauth-sign@~0.9.0:
   resolved "https://registry.npmjs.org/oauth-sign/-/oauth-sign-0.9.0.tgz#47a7b016baa68b5fa0ecf3dee08a85c679ac6455"
   integrity sha512-fexhUFFPTGV8ybAtSIGbV6gOkSv8UtRbDBnAyLQw4QPKkgNlsH2ByPGtMUqdWkos6YCRmAqViwgZrJc/mRDzZQ==
 
+oauth@0.10.x:
+  version "0.10.0"
+  resolved "https://registry.npmjs.org/oauth/-/oauth-0.10.0.tgz#3551c4c9b95c53ea437e1e21e46b649482339c58"
+  integrity sha512-1orQ9MT1vHFGQxhuy7E/0gECD3fd2fCC+PIX+/jgmU/gI3EpRocXtmtvxCO5x3WZ443FLTLFWNDjl5MPJf9u+Q==
+
 oauth@0.9.x:
   version "0.9.15"
   resolved "https://registry.npmjs.org/oauth/-/oauth-0.9.15.tgz#bd1fefaf686c96b75475aed5196412ff60cfb9c1"
@@ -22814,13 +22819,12 @@ passport-google-oauth20@^2.0.0:
   dependencies:
     passport-oauth2 "1.x.x"
 
-passport-microsoft@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.npmjs.org/passport-microsoft/-/passport-microsoft-0.1.0.tgz#dc72c1a38b294d74f4dc55fe93f52e25cb9aa5b4"
-  integrity sha512-0giBDgE1fnR5X84zJZkQ11hnKVrzEgViwRO6RGsormK9zTxFQmN/UHMTDbIpvhk989VqALewB6Pk1R5vNr3GHw==
+passport-microsoft@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.npmjs.org/passport-microsoft/-/passport-microsoft-2.1.0.tgz#7ff80219fd9fd3f572f0900d7dd3f477e37d66cb"
+  integrity sha512-7bOcjEmZCHg5qD55iHaMD/mgBxPtXLbqAwmKox5IsqOSEU50WJk5nQKK4lxKdBHLZ0hf+gzrFgDsTybJP18/JA==
   dependencies:
-    passport-oauth2 "1.2.0"
-    pkginfo "0.2.x"
+    passport-oauth2 "1.8.0"
 
 passport-oauth1@1.x.x:
   version "1.1.0"
@@ -22831,22 +22835,13 @@ passport-oauth1@1.x.x:
     passport-strategy "1.x.x"
     utils-merge "1.x.x"
 
-passport-oauth2@1.2.0:
-  version "1.2.0"
-  resolved "https://registry.npmjs.org/passport-oauth2/-/passport-oauth2-1.2.0.tgz#49613a3eca85c7a1e65bf1019e2b6b80a10c8ac2"
-  integrity sha1-SWE6PsqFx6HmW/EBnitrgKEMisI=
-  dependencies:
-    oauth "0.9.x"
-    passport-strategy "1.x.x"
-    uid2 "0.0.x"
-
-passport-oauth2@1.x.x, passport-oauth2@^1.1.2, passport-oauth2@^1.4.0, passport-oauth2@^1.5.0:
-  version "1.6.1"
-  resolved "https://registry.npmjs.org/passport-oauth2/-/passport-oauth2-1.6.1.tgz#c5aee8f849ce8bd436c7f81d904a3cd1666f181b"
-  integrity sha512-ZbV43Hq9d/SBSYQ22GOiglFsjsD1YY/qdiptA+8ej+9C1dL1TVB+mBE5kDH/D4AJo50+2i8f4bx0vg4/yDDZCQ==
+passport-oauth2@1.8.0, passport-oauth2@1.x.x, passport-oauth2@^1.1.2, passport-oauth2@^1.4.0, passport-oauth2@^1.5.0:
+  version "1.8.0"
+  resolved "https://registry.npmjs.org/passport-oauth2/-/passport-oauth2-1.8.0.tgz#55725771d160f09bbb191828d5e3d559eee079c8"
+  integrity sha512-cjsQbOrXIDE4P8nNb3FQRCCmJJ/utnFKEz2NX209f7KOHPoX18gF7gBzBbLLsj2/je4KrgiwLLGjf0lm9rtTBA==
   dependencies:
     base64url "3.x.x"
-    oauth "0.9.x"
+    oauth "0.10.x"
     passport-strategy "1.x.x"
     uid2 "0.0.x"
     utils-merge "1.x.x"
