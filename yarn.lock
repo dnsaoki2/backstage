@@ -5614,14 +5614,14 @@
     is-module "^1.0.0"
     resolve "^1.19.0"
 
-"@rollup/plugin-yaml@^3.1.0":
-  version "3.1.0"
-  resolved "https://registry.npmjs.org/@rollup/plugin-yaml/-/plugin-yaml-3.1.0.tgz#03a13039ba366fc8d39a1ab94a7debacdd776c2f"
-  integrity sha512-61PsAXqN7YNYdg/nezK3NkqAu6e3Qu2wjHYW3r52Nx0aLi+rG7gkkIqtvxG8EtSqE2rra5CUcWBZj+v362qt9A==
+"@rollup/plugin-yaml@^4.1.2":
+  version "4.1.2"
+  resolved "https://registry.npmjs.org/@rollup/plugin-yaml/-/plugin-yaml-4.1.2.tgz#a3b4cd5793dfd374b815c60183f5adf21bf1ff66"
+  integrity sha512-RpupciIeZMUqhgFE97ba0s98mOFS7CWzN3EJNhJkqSv9XLlWYtwVdtE6cDw6ASOF/sZVFS7kRJXftaqM2Vakdw==
   dependencies:
-    "@rollup/pluginutils" "^3.1.0"
-    js-yaml "^3.14.0"
-    tosource "^1.0.0"
+    "@rollup/pluginutils" "^5.0.1"
+    js-yaml "^4.1.0"
+    tosource "^2.0.0-alpha.3"
 
 "@rollup/pluginutils@^3.0.8", "@rollup/pluginutils@^3.1.0":
   version "3.1.0"
@@ -5639,6 +5639,15 @@
   dependencies:
     estree-walker "^2.0.1"
     picomatch "^2.2.2"
+
+"@rollup/pluginutils@^5.0.1":
+  version "5.1.2"
+  resolved "https://registry.npmjs.org/@rollup/pluginutils/-/pluginutils-5.1.2.tgz#d3bc9f0fea4fd4086aaac6aa102f3fa587ce8bd9"
+  integrity sha512-/FIdS3PyZ39bjZlwqFnWqCOVnW7o963LtKMwQOD0NhQqw22gSr2YY1afu3FxRip4ZCZNsD5jq6Aaz6QV3D/Njw==
+  dependencies:
+    "@types/estree" "^1.0.0"
+    estree-walker "^2.0.2"
+    picomatch "^2.3.1"
 
 "@rushstack/node-core-library@3.44.2":
   version "3.44.2"
@@ -7364,6 +7373,11 @@
   version "0.0.39"
   resolved "https://registry.npmjs.org/@types/estree/-/estree-0.0.39.tgz#e177e699ee1b8c22d23174caaa7422644389509f"
   integrity sha512-EYNwp3bU+98cpU4lAWYYL7Zz+2gryWH1qbdDTidVd6hkiR6weksdbMadyXKXNPEkQFhXM+hVO9ZygomHXp+AIw==
+
+"@types/estree@^1.0.0":
+  version "1.0.6"
+  resolved "https://registry.npmjs.org/@types/estree/-/estree-1.0.6.tgz#628effeeae2064a1b4e79f78e81d87b7e5fc7b50"
+  integrity sha512-AYnb1nQyY49te+VRAVgmzfcgjYS91mY5P0TKUDCLEM+gNnA+3T6rWITXRLYCpahpqSQbN5cE+gHpnPyXjHWxcw==
 
 "@types/expect@^1.20.4":
   version "1.20.4"
@@ -14453,6 +14467,11 @@ estree-walker@^2.0.1:
   resolved "https://registry.npmjs.org/estree-walker/-/estree-walker-2.0.1.tgz#f8e030fb21cefa183b44b7ad516b747434e7a3e0"
   integrity sha512-tF0hv+Yi2Ot1cwj9eYHtxC0jB9bmjacjQs6ZBTj82H8JwUywFuc+7E83NWfNMwHXZc11mjfFcVXPe9gEP4B8dg==
 
+estree-walker@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.npmjs.org/estree-walker/-/estree-walker-2.0.2.tgz#52f010178c2a4c117a7757cfe942adb7d2da4cac"
+  integrity sha512-Rfkk/Mp/DL7JVje3u18FxFujQlTNR2q6QfMSMB7AvCBx91NGj/ba3kCfza0f6dVDbw7YlRf/nDrn7pQrCCyQ/w==
+
 esutils@^2.0.2:
   version "2.0.3"
   resolved "https://registry.npmjs.org/esutils/-/esutils-2.0.3.tgz#74d2eb4de0b8da1293711910d50775b9b710ef64"
@@ -18707,7 +18726,7 @@ js-yaml@4.1.0, js-yaml@=4.1.0, js-yaml@^4.0.0, js-yaml@^4.1.0:
   dependencies:
     argparse "^2.0.1"
 
-js-yaml@^3.13.0, js-yaml@^3.13.1, js-yaml@^3.14.0, js-yaml@^3.6.1, js-yaml@^3.8.3:
+js-yaml@^3.13.0, js-yaml@^3.13.1, js-yaml@^3.6.1, js-yaml@^3.8.3:
   version "3.14.1"
   resolved "https://registry.npmjs.org/js-yaml/-/js-yaml-3.14.1.tgz#dae812fdb3825fa306609a8717383c50c36a0537"
   integrity sha512-okMH7OXXJ7YrN9Ok3/SXrnu4iX9yOk+25nqX4imS2npuvTYDmo/QEZoqwZkYaIDk3jVvBOTOIEgEhaLOynBS9g==
@@ -23164,6 +23183,11 @@ picomatch@^2.0.4, picomatch@^2.2.1, picomatch@^2.2.2, picomatch@^2.2.3, picomatc
   version "2.3.0"
   resolved "https://registry.npmjs.org/picomatch/-/picomatch-2.3.0.tgz#f1f061de8f6a4bf022892e2d128234fb98302972"
   integrity sha512-lY1Q/PiJGC2zOv/z391WOTD+Z02bCgsFfvxoXXf6h7kv9o+WmsmzYqrAwY63sNgOxE4xEdq0WyUnXfKeBrSvYw==
+
+picomatch@^2.3.1:
+  version "2.3.1"
+  resolved "https://registry.npmjs.org/picomatch/-/picomatch-2.3.1.tgz#3ba3833733646d9d3e4995946c1365a67fb07a42"
+  integrity sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==
 
 pify@^2.0.0, pify@^2.2.0, pify@^2.3.0:
   version "2.3.0"
@@ -27934,10 +27958,10 @@ toposort@^2.0.2:
   resolved "https://registry.npmjs.org/toposort/-/toposort-2.0.2.tgz#ae21768175d1559d48bef35420b2f4962f09c330"
   integrity sha1-riF2gXXRVZ1IvvNUILL0li8JwzA=
 
-tosource@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.npmjs.org/tosource/-/tosource-1.0.0.tgz#42d88dd116618bcf00d6106dd5446f3427902ff1"
-  integrity sha1-QtiN0RZhi88A1hBt1URvNCeQL/E=
+tosource@^2.0.0-alpha.3:
+  version "2.0.0-alpha.3"
+  resolved "https://registry.npmjs.org/tosource/-/tosource-2.0.0-alpha.3.tgz#ef385dac9092e009bf25c018838ddaae436daeb6"
+  integrity sha512-KAB2lrSS48y91MzFPFuDg4hLbvDiyTjOVgaK7Erw+5AmZXNq4sFRVn8r6yxSLuNs15PaokrDRpS61ERY9uZOug==
 
 touch@^3.1.0:
   version "3.1.0"
