@@ -45,7 +45,7 @@
   "devDependencies": {
     "@backstage/cli": "^0.10.0",
     "@backstage/test-utils": "^0.1.22",
-    "@graphql-codegen/cli": "^1.21.3",
+    "@graphql-codegen/cli": "^5.0.3",
     "@graphql-codegen/typescript": "^1.17.7",
     "@graphql-codegen/typescript-resolvers": "^1.17.7",
     "eslint-plugin-graphql": "^4.0.0",
