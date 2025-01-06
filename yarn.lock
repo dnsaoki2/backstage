@@ -7899,9 +7899,9 @@
   integrity sha512-4QQmOF5KlwfxJ5IGXFIudkeLCdMABz03RcUXu+LCb24zmln8QW6aDjuGl4d4XPVLf2j+FnjelHTP7dvceAFbhA==
 
 "@types/nunjucks@^3.1.4":
-  version "3.2.0"
-  resolved "https://registry.npmjs.org/@types/nunjucks/-/nunjucks-3.2.0.tgz#2303629c91cdd39de103af979046d4a8590351e4"
-  integrity sha512-1FM36Hm3EdidJmWlZZafkg/kZME0UZ/0vQ46JE8R7R0JqQafah0r+d4i6d/MJg5DnKxEeAOAeifEVkzo7fEvGg==
+  version "3.2.6"
+  resolved "https://registry.npmjs.org/@types/nunjucks/-/nunjucks-3.2.6.tgz#6d6e0363719545df8b9a024279902edf68b2caa9"
+  integrity sha512-pHiGtf83na1nCzliuAdq8GowYiXvH5l931xZ0YEHaLMNFgynpEqx+IPStlu7UaDkehfvl01e4x/9Tpwhy7Ue3w==
 
 "@types/oauth@*":
   version "0.9.1"
@@ -22036,9 +22036,9 @@ number-is-nan@^1.0.0:
   integrity sha1-CXtgK1NCKlIsGvuHkDGDNpQaAR0=
 
 nunjucks@^3.2.3:
-  version "3.2.3"
-  resolved "https://registry.npmjs.org/nunjucks/-/nunjucks-3.2.3.tgz#1b33615247290e94e28263b5d855ece765648a31"
-  integrity sha512-psb6xjLj47+fE76JdZwskvwG4MYsQKXUtMsPh6U0YMvmyjRtKRFcxnlXGWglNybtNTNVmGdp94K62/+NjF5FDQ==
+  version "3.2.4"
+  resolved "https://registry.npmjs.org/nunjucks/-/nunjucks-3.2.4.tgz#f0878eef528ce7b0aa35d67cc6898635fd74649e"
+  integrity sha512-26XRV6BhkgK0VOxfbU5cQI+ICFUtMLixv1noZn1tGU38kQH5A5nmmbk/O45xdyBhD1esk47nKrY0mvQpZIhRjQ==
   dependencies:
     a-sync-waterfall "^1.0.0"
     asap "^2.0.3"
