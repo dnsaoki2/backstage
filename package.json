@@ -76,7 +76,7 @@
     "lint-staged": "^11.1.2",
     "minimist": "^1.2.5",
     "prettier": "^2.2.1",
-    "shx": "^0.3.2",
+    "shx": "^0.4.0",
     "ts-node": "^10.4.0",
     "typescript": "~4.3.5",
     "yarn-lock-check": "^1.0.5"
