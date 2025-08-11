@@ -7926,9 +7926,9 @@
   integrity sha512-kUNnecmtkunAoQ3CnjmMkzNU/gtxG8guhi+Fk2U/kOpIKjIMKnXGp4IJCgQJrXSgMsWYimYG4TGjz/UzbGEBTw==
 
 "@types/passport-github2@^1.2.4":
-  version "1.2.5"
-  resolved "https://registry.npmjs.org/@types/passport-github2/-/passport-github2-1.2.5.tgz#79064e213ff33ca0a9d21af3da09a3230fac8099"
-  integrity sha512-+WLyrd8JPsCxroK34EjegR0j3FMxp6wqB9cw/sRCFkWT9qic1dymAn021gr336EpyjzdhjUd2KKrqyxvdFSvOA==
+  version "1.2.9"
+  resolved "https://registry.npmjs.org/@types/passport-github2/-/passport-github2-1.2.9.tgz#7e43b8529276cc8c429ac430f9de06d8406a17da"
+  integrity sha512-/nMfiPK2E6GKttwBzwj0Wjaot8eHrM57hnWxu52o6becr5/kXlH/4yE2v2rh234WGvSgEEzIII02Nc5oC5xEHA==
   dependencies:
     "@types/express" "*"
     "@types/passport" "*"
