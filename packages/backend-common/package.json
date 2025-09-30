@@ -54,7 +54,7 @@
     "helmet": "^4.0.0",
     "isomorphic-git": "^1.8.0",
     "jose": "^1.27.1",
-    "keyv": "^4.0.3",
+    "keyv": "^5.5.3",
     "keyv-memcache": "^1.2.5",
     "knex": "^0.95.1",
     "lodash": "^4.17.21",
