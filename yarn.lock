@@ -7117,10 +7117,10 @@
     "@types/node" "*"
     source-map "^0.6.0"
 
-"@types/codemirror@^0.0.108":
-  version "0.0.108"
-  resolved "https://registry.npmjs.org/@types/codemirror/-/codemirror-0.0.108.tgz#e640422b666bf49251b384c390cdeb2362585bde"
-  integrity sha512-3FGFcus0P7C2UOGCNUVENqObEb4SFk+S8Dnxq7K6aIsLVs/vDtlangl3PEO0ykaKXyK56swVF6Nho7VsA44uhw==
+"@types/codemirror@^5.60.17":
+  version "5.60.17"
+  resolved "https://registry.npmjs.org/@types/codemirror/-/codemirror-5.60.17.tgz#754649d285e0e775fe912ad2f5e757f22a70e1cf"
+  integrity sha512-AZq2FIsUHVMlp7VSe2hTfl5w4pcUkoFkM3zVsRKsn1ca8CXRDYvnin04+HP2REkwsxemuHqvDofdlhUWNpbwfw==
   dependencies:
     "@types/tern" "*"
 
