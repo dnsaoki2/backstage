@@ -3851,10 +3851,10 @@ js-yaml@^3.13.1, js-yaml@^3.8.1:
     argparse "^1.0.7"
     esprima "^4.0.0"
 
-js-yaml@^4.1.0:
-  version "4.1.0"
-  resolved "https://registry.npmjs.org/js-yaml/-/js-yaml-4.1.0.tgz#c1fb65f8f5017901cdd2c951864ba18458a10602"
-  integrity sha512-wpxZs9NoxZaJESJGIZTyDEaYpl0FKSA+FB9aJiyemKhMwkxQg63h4T1KJgUGHpTqPDNRcmmYLugrRjJlBtWvRA==
+js-yaml@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.npmjs.org/js-yaml/-/js-yaml-5.0.0.tgz#f8500ec24e26830f8f0f66f9df9cb909e22e82cc"
+  integrity sha512-GSvaPUbk1U+FMZ7rJzF+F8e5YVtu7KnD40et/5rBXXRBv2jCO9L3qCewvIDDdudC0QycTFlf6EAA+h3kxBsuUw==
   dependencies:
     argparse "^2.0.1"
 
